@@ -1,0 +1,36 @@
+{
+  "contract_version": 2,
+  "routes": [
+    {
+      "logical_feature": "WRITTEN_PREM",
+      "logistic": {
+        "feature_name": "WRITTEN_PREM_BIN",
+        "var_type": "discrete",
+        "origin": "derived",
+        "source_columns": ["WRITTEN_PREM"],
+        "transform": "training_quantile_bins"
+      },
+      "xgboost": {
+        "feature_name": "WRITTEN_PREM",
+        "var_type": "continuous"
+      }
+    },
+    {
+      "logical_feature": "PROPERTY_STATE",
+      "logistic": {
+        "feature_name": "PROPERTY_STATE_RETENTION_GROUP",
+        "var_type": "discrete",
+        "origin": "derived",
+        "source_columns": ["PROPERTY_STATE"],
+        "transform": "training_marginal_binary_optimal_state_binning"
+      },
+      "xgboost": {
+        "feature_name": "PROPERTY_STATE_RETENTION_GROUP",
+        "var_type": "discrete",
+        "origin": "derived",
+        "source_columns": ["PROPERTY_STATE"],
+        "transform": "training_marginal_binary_optimal_state_binning"
+      }
+    }
+  ]
+}
