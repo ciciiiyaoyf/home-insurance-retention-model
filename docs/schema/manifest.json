@@ -1,0 +1,57 @@
+{
+  "all_config_columns_covered": true,
+  "availability_claim": "Intended conditional contract only; no original warehouse point-in-time availability has been verified.",
+  "compatible_model_columns_with_optional_output": 417,
+  "confidential_records_included": false,
+  "config_columns_in_source": 390,
+  "config_columns_recomputed_by_build": [
+    "DED_FINAL",
+    "DED_PROCESS",
+    "DED_RAW",
+    "MONTH_13_EVALUATION_DATE",
+    "MONTH_1_EVALUATION_DATE",
+    "NB_MAX_EXPSR_END_EFF_DT",
+    "NB_MIN_EXPSR_EFF_DT",
+    "NB_POLICY_TERM_END_DATE",
+    "NB_POLICY_TERM_START_DATE",
+    "PREV_WRITTEN_PREM",
+    "RATE_CHANGE",
+    "RATE_CHANGE2",
+    "RETENTION_13_1_IND",
+    "WRITTEN_PREM"
+  ],
+  "config_rows": 404,
+  "config_sha256": "8496a7a041fad316f4c6587decfe88b5da21f759f2473b74bdcacc50ba308561",
+  "derived_default_output_columns": 23,
+  "derived_output_columns": 24,
+  "fresh_build_model_columns": 416,
+  "optional_legacy_output_columns": [
+    "ANCHOR_TENURE_YEARS_INT"
+  ],
+  "real_distributions_reconstructed": false,
+  "schema_version": "1.0",
+  "sha256": {
+    "b_data_acquisition/sql/create_policy_exposure_history.sql": "01ac92b70af872c3a91ee955b2c92820accbf45c6d939d9e6f37cf2e58b11263",
+    "docs/schema/model_derived_columns.csv": "c4be6ee8bb6c37bb1eb3a81af93aabb1866494d556866bd8a5986fa445d0bb0b",
+    "docs/schema/source_columns.csv": "2e5b02d1cf56d71ad458f0a7adfd156eb4fc943fdecd080c544d3832ded6d0b6"
+  },
+  "source_columns": 393,
+  "source_columns_added_for_build": [
+    "EARNED_EXPOSURE_VALUE",
+    "TENURE_YEARS_INT",
+    "TOT_ERND_PREM_AMT"
+  ],
+  "source_derived_overlap": [],
+  "source_role_counts": {
+    "candidate": 97,
+    "disabled": 273,
+    "structural": 23
+  },
+  "source_table": "INSURANCE_ANALYTICS.RETENTION.POLICY_EXPOSURE_HISTORY",
+  "source_type_counts": {
+    "DATE": 10,
+    "FLOAT": 151,
+    "NUMBER(38,0)": 73,
+    "VARCHAR": 159
+  }
+}
