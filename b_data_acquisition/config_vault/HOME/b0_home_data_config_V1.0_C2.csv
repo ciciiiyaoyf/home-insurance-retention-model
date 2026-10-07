@@ -1,1 +1,405 @@
-
+Column,dtype,var_type,source_tbl,seg,cv_ind,uwtgbm_model_step,iglm_model_step,sglm_model_step,uwtgbm_control,iglm_control,sglm_control,fe_sel,rebased_to,fixed_level,sm_ind,sm_excld_lvl,poly_sm_dgr,sv_sm_inc,sv_sm_ratio,sv_sm_turning,sv_sm_trend,interaction_ind,roc_header,roc_tab,roc_var_name,filing_var_name,filing_tab,description
+ADDL_LIVING_EXPENSE_TERM_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Additional living expense offset
+ADDL_PREMISES_CVG_IND,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,ADDL PREMISES Coverage Indicator
+ADDTL_PREMISE_IND,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Additional prem
+ADDTL_RESDC_TYPE_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,,,,,,,Additional Residence
+AUTO_HOME_NHP,string,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+AUTOMATIC_PAY_IND_EXP,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Pay method of the billing account, meaning automatic-pay/manual-pay type"
+BLDG_ORDN_OR_LAW_CVG_AMT,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,,,,,,,Building ord and law coverage amount
+BSMT_PRSNC_IND,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-999|hhhl-2|wtwt-2|nwwt-999|liab-2|thft-2|othr-999|comb-2|swdr-2,nwfr-999|wnlg-999|hail-999|hhhl-2|wtwt-2|nwwt-999|liab-2|thft-2|othr-999|comb-2|swdr-2,,,,,,,,,,,,,,0,,,,,,Basement Presence Indicator
+CANCEL_CNT,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Company + nonpay mid-term + nonpay renewal cancels in the 0 to2 years prior to policy term start
+CANCEL_IND,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-999,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-999,,,,,N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Cancel Count Ren
+CLUE_CCA_NH,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,,,,,,,,0,,,,,,Clue CCA
+CNSTRCT_MTRL_DESC_GRP_HOME,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,,,,,,,,,0,,,,,,Construction Material Group
+CNSTRCT_MTRL_DESC_GRP_FLEX,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Construction Material Group FLEX
+CNSTRCT_YR,int16,continuous,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Construction Year
+COCS,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Course of Construction
+COV_A_DWELLING_CVG_AMT,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,COV A DWELLING Coverage Amount
+COV_B_BUCKET,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Bucketed Cov B NB
+COV_C_BUCKET,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Bucketed Cov C NB
+COV_D_BUCKET,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Bucketed Cov D NB
+COVA_GRP_WOGAP_FLEX,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+COVA_GRP_WOGAP_B23,string,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-999,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-999,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-none,0,,,,,,Coverage A buckets 23
+COVA_GRP_WOGAP_B50,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Coverage A buckets 50
+COVA_GRP_WOGAP_S,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,COVA group
+COVA_PER_SQFT_BIN,string,discrete,POLICY_RETENTION_13_1,Interaction,1,,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-4|othr-4|comb-4|swdr-999,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-4|othr-4|comb-4|swdr-999,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-none,0,,,,,,Coverage A per Sqft interaction term
+COVA_PER_SQFT,int8,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,,,,,,,,,,,,,,,,0,,,,,,Coverage A per Sqft
+COVE_AMT_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Cov E amount groupd
+CRED_MATRIX,string,discrete,POLICY_RETENTION_13_1,Credit,1,,nwfr-3|wnlg-3|hail-999|hhhl-999|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,nwfr-3|wnlg-3|hail-999|hhhl-999|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,,,,,,,,,,0,,,,,,credit matrix: interaction between CRED_TIER_GRP and TIER_DIF_GRP
+CREDIT_CARD_CNT_YR1,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 0 to 1 years prior to policy term start
+CREDIT_CARD_CNT_YR2,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 1 to 2 years prior to policy term start
+CREDITDEBIT_CARD_CNT_YR1,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 0 to 1 years prior to policy term start
+CREDITDEBIT_CARD_CNT_YR2,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 1 to 2 years prior to policy term start
+DEBIT_CARD_CNT_YR1,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 0 to 1 years prior to policy term start
+DEBIT_CARD_CNT_YR2,float64,continuous,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Payments of a certain payment method on the account in 1 to 2 years prior to policy term start
+DECLINING_DEDUCTIBLES_ENDOR_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Declining deductibles endorsement ind
+DED_ALLPERIL_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Allperil deductible x COVA offset
+DED_ALLPERIL_OFST_NOTREND,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,All peril deductible offset. No trend
+DED_SWDR_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Sewer and Drain offset
+DED_WDHL_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,WDHL deductible x COVA x State level offset
+DED_WDHL_OFST_NOTREND,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Wind hail deductible offset. No Trend
+DED_FINAL,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Deductible bucket derived from the source row retained at Month 1
+DED_PROCESS,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Numeric deductible amount derived from the source row retained at Month 1
+DED_RAW,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,First deductible token from the source row retained at Month 1
+DWL_STYLE_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+EARLY_SHOP_IND_COMB_V2,string,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-3|wnlg-3|hail-999|hhhl-999|wtwt-3|nwwt-999|liab-3|thft-3|othr-999|comb-3|swdr-999,nwfr-3|wnlg-3|hail-999|hhhl-999|wtwt-3|nwwt-999|liab-3|thft-3|othr-999|comb-3|swdr-999,,,,,N,,solver,U,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Combination of FDR discount + Derived indicator using quotes data (early_shop_ind_v2)
+EARLY_SHOP_IND_V2,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Early shoppers discount (No earlier policy from MDM data)
+ECYCOMB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (Combined Peril)
+ECYERQK,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (earthquake)
+ECYFIRE,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (fire)
+ECYHAIL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (hail)
+ECYHHHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (hail)
+ECYHURR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (hurricane)
+ECYLIAB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (liability)
+ECYNWFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (non wildfire)
+ECYNWWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (non-weather water)
+ECYOTHR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (other)
+ECYSWDR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (sewer and drain)
+ECYTHFT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (theft)
+ECYWATER,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (water)
+ECYWLFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (wildfire)
+ECYWNHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (wind and hail)
+ECYWNLG,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (wind lightning)
+ECYWTWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Exposure (weather water)
+EFT_IND_EXP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,EFT indicator for the billing account
+EPCOMB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (earthquake)
+EPERQK,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (earthquake)
+EPFIRE,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (fire)
+EPHAIL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (hail)
+EPHHHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (hail)
+EPHURR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (hurricane)
+EPLIAB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (liability)
+EPNWFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (non-wildfire)
+EPNWWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (non-weather water)
+EPOTHR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (other)
+EPSWDR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (sewer and drain)
+EPTHFT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (theft)
+EPWATER,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Premium (water)
+EPWLFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (wildfire)
+EPWNHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (wind and hail)
+EPWNLG,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (wind and lightning)
+EPWTWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned premium (weather water)
+EXPOSURE_CALENDAR_YEAR,float64,discrete,POLICY_RETENTION_13_1,Control,0,,,,,"nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-2,3,4,5|swdr-2,3,4,5","nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-2,3,4,5|swdr-2,3,4,5",,,,,,,,,,,0,,,,,,Exposure calendar year
+FDR_AFNTY_DISC_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-3|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,nwfr-3|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Affinity Discount Indicator
+FDR_CNTRL_BGLR_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Central Burglar Indicator
+FDR_FIRE_DIST_GRP2,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-3|thft-3|othr-3|comb-3|swdr-999,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-3|thft-3|othr-3|comb-3|swdr-999,,,,,,,solver,MIS/ISO_UN_NR,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-none|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Mileage to firestation group
+FDR_FRTFD_HOME_DISC_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Fortified Home Discount Indicator
+FDR_HOA_GATED_COMNTY_DISC_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,HOA Gated Community Discount Indicator
+FDR_HOME_HOME_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Multi Home indicator derived based on FDR data (using PLA HH)
+FDR_IRON_BAR_DISC_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Iron Bar Discount Indicator
+FDR_LOCAL_BGLR_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Local Burglar Indicator
+FDR_PRTCTN_CLS_CD,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Protection class field
+FDR_SPRKLR_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Fire Sprinkler Indicator - Discount
+HOME_CLAIM_FREE_GRP_HOME_7_500,int8,discrete,POLICY_RETENTION_13_1,Claim,1,,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-none|hhhl-none|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Claim Free Discount Group buckets 0-7
+HOME_CRED_TIER_2ND,string,discrete,POLICY_RETENTION_13_1,Credit,0,,,,,,,,,,,,,,,,,0,,,,,,Credit Tier 2
+HOME_CRED_TIER_BEST,string,discrete,POLICY_RETENTION_13_1,Credit,1,,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,thft-23:3.30;24:3.50;25:3.74,poly,Z,nwfr-5|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-1|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,0,,,,,,Credit Tier
+HOME_CW_CG_CAT_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,Chargability cat claims
+HOME_CW_CG_FIR_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-4|thft-4|othr-999|comb-4|swdr-999,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-4|thft-4|othr-999|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_LIA_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-999|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-4|othr-999|comb-4|swdr-999,nwfr-999|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-4|othr-999|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_NWW_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-999|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-4,nwfr-999|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-4,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_OTH_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-999,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-none|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_THF_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-999|comb-4|swdr-999,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-999|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_THR_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-999|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-999|liab-4|thft-4|othr-4|comb-4|swdr-999,nwfr-999|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-999|liab-4|thft-4|othr-4|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_WBS_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-999|wnlg-999|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-4,nwfr-999|wnlg-999|hail-999|hhhl-4|wtwt-4|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-4,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_WTH_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,nwfr-999|wnlg-999|hail-999|hhhl-4|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-4|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,GRP Claim Count 500
+HOME_CW_CG_WTHWOCAT_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,Chargability non cat claims
+HOME_ISI_BY_AGE_GRP,string,discrete,POLICY_RETENTION_13_1,Credit,1,,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-4,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-4,,,,,,,,,,,,,,0,,,,,,Isured age group
+FIRE_PRTCTN_COMB_DESC,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,NONE,,,,,,,,,0,,,,,,Fire protection device desc
+FOTFID_ROOF_OFST,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Fortified roof ofst
+GOOD_PAYER_DISC_YR1,int8,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-4,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-4|nwwt-4|liab-4|thft-4|othr-4|comb-4|swdr-4,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Late fees charged (without considering waivers) in the 0 to 1 years prior to policy term start
+GRPNON_HOME_CW_CG_FIR_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Fire"
+GRPNON_HOME_CW_CG_LIA_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Liability"
+GRPNON_HOME_CW_CG_NWW_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Non Weather Water"
+GRPNON_HOME_CW_CG_OTH_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Other"
+GRPNON_HOME_CW_CG_THF_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Theft"
+GRPNON_HOME_CW_CG_THR_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Threshold"
+GRPNON_HOME_CW_CG_WBS_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Water Backup"
+GRPNON_HOME_CW_CG_WTH_7_IND_500,int8,discrete,POLICY_RETENTION_13_1,Claim,0,,,,,,,,,,,,,,,,,0,,,,,,"Prior claims in the last 7 years 500 threshold, Weather"
+HH_PNI_BRTH_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,HH/PNI date of Birth
+POLICYHOLDER_ID,string,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"HH_PNI_CLNT_ID_SK, adjusted"
+HH_PNI_SPOUSE_BRTH_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Spouse of HH/PNI date of Birth
+HOME_AGE_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+HOME_AGE_NUM,float64,continuous,POLICY_RETENTION_13_1,Home Attributes,1,,,,,,,,,,,,,,,,,0,,,,,,Home Age
+HOME_AGE_NUM_BIN,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-2|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,nwwt-24-26,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-peak|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Home Age binned
+HOME_AUTO_DESC,string,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Home Auto Indicator Description
+HOME_AUTO_IND,string,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Home Auto Indicator
+HOME_BOAT_IND,int8,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Home Boat Indicator
+HOME_BUS_IND,int8,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Home Commercial Indicator
+HOME_HOME_COMB_IND,string,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,N,,,,,,,,,0,,,,,,Home Home
+HOME_LANDLORD_COMB_IND,string,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,N,,,,,,,,,0,,,,,,Home Landlord
+HOME_LIFE_IND,int8,discrete,POLICY_RETENTION_13_1,Discount,1,,nwfr-3|wnlg-999|hail-999|hhhl-3|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,nwfr-3|wnlg-999|hail-999|hhhl-3|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Home Life Indicator
+HOME_MOTORHOME_IND,int8,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Home MotorHome Indicator
+EXPOSURE_ROW_ID,int32,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"Unique alphanumeric identifier for each exposure record, adjusted"
+HOME_SHARE_ENDOR_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Home Share ind
+HOME_SPECIALTY_IND,string,discrete,POLICY_RETENTION_13_1,Discount,1,,nwfr-999|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-999|thft-999|othr-999|comb-3|swdr-3,nwfr-999|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-999|thft-999|othr-999|comb-3|swdr-3,,,,,N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Motorcycle/Motorhome/RCV/Boat Indicator
+HOME_UMBRELLA_IND,int8,discrete,POLICY_RETENTION_13_1,Discount,1,,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-999|thft-999|othr-3|comb-3|swdr-3,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-999|thft-999|othr-3|comb-3|swdr-3,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Home Umbreall Indicator
+HOME_UNIT_CNT_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped home units number
+HOME_UNIT_CNT_GRP_TH_HO_IND,string,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-999|thft-3|othr-999|comb-3|swdr-999,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-999|thft-3|othr-999|comb-3|swdr-999,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+ILCOMB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Combined Peril
+ILCOMBCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Combined Peril
+ILERQK,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Earthquake
+ILERQKCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Earthquake
+ILFLTR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,ILFLTR
+ILFLTRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,ILFLTRCNT
+ILHAIL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Hail
+ILHAILCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Hail
+ILHHHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss High Hail States
+ILHHHLCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count High Hail States
+ILHURR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Hurricane
+ILHURRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Hurricane
+ILLIAB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Liability
+ILLIABCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Liability
+ILNWFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Non-Wildfire
+ILNWFRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Non-Wildfire
+ILNWWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Non-Weather Water
+ILNWWTCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Non-Weather Water
+ILOTHR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Other
+ILOTHRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Other
+ILSWDR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Sewer and Drain
+ILSWDRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Sewer and Drain
+ILTHFT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Theft
+ILTHFTCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Theft
+ILWLFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Wildfire
+ILWLFRCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Wildfire
+ILWNLG,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Wind Lightning
+ILWNLGCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Wind Lightning
+ILWTWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Weather Water
+ILWTWTCNT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Incurred Loss Count Weather Water
+LATE_FEE_CNT,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Late fees charged (without considering waivers) on the household in 0 to 2 years prior to policy term start
+LATE_FEE_IND,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-999|liab-999|thft-5|othr-999|comb-5|swdr-999,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-999|liab-999|thft-5|othr-999|comb-5|swdr-999,,,,,N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Last Fee count Ren
+LIMITED_SLAB_CVG_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Limited slab coverage
+LOSS_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Loss date
+MARING_METL_ROOF_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Marring to Metal Roof offset
+MATCHING_CVG_AMT,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,MATCHING Coverage Amount
+MATCHING_CVG_AMT_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Matching Coverage amount offset
+MDM_HOME_HOME_IND1,int8,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Multi Home indicator derived based on PNI & Spouse
+MDM_HOME_HOME_IND2,int8,discrete,POLICY_RETENTION_13_1,Discount,0,,,,,,,,,,,,,,,,,0,,,,,,Multi Home indicator derived based on all customers in household (EHH)
+MPD_HME_ROC_EXP_SK,int32,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,Mapped Home ROC Exposure Key
+MVA_GRGE_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,,,,,,,,,0,,,,,,MVA Garage group
+MVA_LVNG_AREA_SQR_FT_BIN,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,,,poly,wnlg-0000-0799;5000+,nwfr-4|wnlg-2|hail-3|hhhl-2|wtwt-2|nwwt-2|liab-3|thft-6|othr-2|comb-2|swdr-2,,,,,0,,,,,,Living Square footage
+MVA_LVNG_AREA_SQR_FT_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Living Square footage
+MVA_LVNG_AREA_SQR_FT_NUM,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,,,,,,,,,,,,,,,,0,,,,,,Living Square footage
+MVA_OCPNCY_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,Primary,,,,,,,,,0,,,,,,Occupancy Code
+NB_FRST_AAF_5YR_BIN,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,0,,solver,-999,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Binned NB AAF
+NB_FRST_AAF_5YR_CNT_G,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,"At fault accident counts grouped, new busniess"
+NB_FRST_AAFNAF_5YR_CNT_G,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,"At fault accident and not at fault accident counts grouped, new busniess"
+NB_FRST_AAFNAFCOMP_5YR_CNT_G,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,,,,,0,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,"At fault accident, not at fault accident counts and Comp claimes grouped, new busniess"
+NB_FRST_CCA_CIF_CD,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,,,,,,,,0,,,,,,Length of Time with Prior Auto Carrier
+NB_FRST_CCA_COMB,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,,,,,,,,,,,,,,0,,,,,,CCA Combined variable
+NB_FRST_CCA_LAPSE_IND,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,,,,,,,,0,,,,,,Days Lapse with Prior Auto Carrier
+NB_FRST_CCA_PRI_INS_TIER2,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,solver,__NULL__,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Prior BI Limit
+NB_FRST_CCA_TRANS_CD2,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,,__NULL__,,,,,,0,,,,,,Transfer Code with Prior Auto Carrier
+NB_FRST_CMP_LOS_5Y_BIN,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,0,,solver,-999,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Binned NB Comp
+NB_FRST_NAF_5YR_BIN,string,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,0,,solver,-999,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Binned NB NAF
+NB_RNWL_TYP_CD,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,New Business renewal type code
+EXPOSURE_START_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Exposure effective date
+EXPOSURE_END_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Exposure end effective date
+NEW_HOME_BUYER,string,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-3|wnlg-3|hail-3|hhhl-999|wtwt-3|nwwt-999|liab-3|thft-999|othr-3|comb-3|swdr-999,nwfr-3|wnlg-3|hail-3|hhhl-999|wtwt-3|nwwt-999|liab-3|thft-999|othr-3|comb-3|swdr-999,,,,,1-N,,solver,4-UNKNOWN,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-none,0,,,,,,Rent to own/time at residence <=12 month
+NM_DRIVEWAY_AREA_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-5|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,nwfr-999|wnlg-999|hail-5|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,,,,,,,,,,,,,,0,,,,,,Nearmap Driveway area
+NM_LOT_SIZE_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-5|liab-5|thft-5|othr-999|comb-5|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-5|liab-5|thft-5|othr-999|comb-5|swdr-999,,,,,,,,,,,,,,0,,,,,,Nearmap Lot size
+NM_POOL_FLAG,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,0,,solver,UN,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Nearmap pool flag
+NM_POOL_SOLAR_TRAMP3,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-5|othr-5|comb-5|swdr-5,,,,,N,,,,,,,,,0,,,,,,"Nearmap pool, solar and trampoline flag"
+NM_PRIM_BLD_2D_CLP_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,,,,,,,,,,,,,,0,,,,,,Nearmap Primary building footprint
+NM_PRIM_BLD_2D_CLP,int8,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,,,,,,,,,,,,,,,,,,,,Nearmap primary building footprint (raw numeric)
+NM_PRIM_BLD_HEIGHT_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-5|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,nwfr-999|wnlg-5|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,,,,,,,,,,,,,,0,,,,,,Nearmap Primary building height
+NM_PRIM_BLDG_COVER_BIN,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-5|hail-999|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,nwfr-999|wnlg-5|hail-999|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-999,,,,,,,,,,,,,,0,,,,,,Nearmap Primary building coverage of lot
+NM_PRIM_ROOF_PITCH_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,nwfr-999|wnlg-999|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,,,,,,,,,,,,,,0,,,,,,Nearmap Primary building roof pitch
+NM_ROOF_AREA_SRC_BIN,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,,,,,,,solver,17_UN,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-none|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-none|liab-none|thft-none|othr-none|comb-none|swdr-none,0,,,,,,Nearmap Primary building roof area
+NM_ROOF_GEOM_COMB,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-5|swdr-5,,,,,,,,,,,,,,0,,,,,,Nearmap Primary building roof geometry
+NM_SOLAR_FLAG,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,0,,solver,UN,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Nearmap Solar Flag
+NM_TRAMP_FLAG,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,0,,solver,UN,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Nearmap Trampoline flag
+NM_TREE_OVERHANG_BIN,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-5|thft-999|othr-5|comb-5|swdr-5,nwfr-999|wnlg-5|hail-5|hhhl-5|wtwt-999|nwwt-999|liab-5|thft-999|othr-5|comb-5|swdr-5,,,,,01_0,,,,,,,,,0,,,,,,Nearmap Tree overhang
+NON_PAY_CNT,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,0,,,,,,,,,0,,,,,,"NOC, IEN, and NSF (insured definitely responsible) on the account in 0 to 2 years prior to policy term start"
+NON_PAY_IND,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-999|thft-5|othr-999|comb-5|swdr-5,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-999|thft-5|othr-999|comb-5|swdr-5,,,,,N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Non Pay Count Ren
+NON_PAY_TENURE,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"NOC, IEN, and NSF (insured definitely responsible) on the account in 0 to 2 years prior to policy term start + ""_"" + Tenure group for billing"
+NOT_BY_PERIL_EP_AMT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,Earned Preminum (not by peril)
+OLDEST_AGE_CLNT,float64,continuous,POLICY_RETENTION_13_1,Household,1,,,,,,,,,,,,,,,,,0,,,,,,Oldest aget from PNI and Spouse
+OLDEST_AGE_CLNT_BIN,string,discrete,POLICY_RETENTION_13_1,Household,1,,nwfr-2|wnlg-999|hail-999|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,nwfr-2|wnlg-999|hail-999|hhhl-2|wtwt-2|nwwt-2|liab-2|thft-2|othr-2|comb-2|swdr-2,,,,,,,poly,,nwfr-3|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-2|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+PAPERLESS_IND_EXP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-3|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-3|thft-999|othr-3|comb-3|swdr-3,nwfr-3|wnlg-999|hail-3|hhhl-3|wtwt-3|nwwt-999|liab-3|thft-999|othr-3|comb-3|swdr-3,,,,,N,,,,,,,,,0,,,,,,Paperless billing of the billing account
+PAPERLESS_IND_TERM,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Paperless billing of the billing account
+PAY_METHOD_DESC_EXP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Pay method of the billing account, meaning automatic-pay/manual-pay type"
+PAY_METHOD_DESC_TERM,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Pay method of the billing account, meaning automatic-pay/manual-pay type"
+PAY_PLAN_AUTO_PAY,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,nwfr-999|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-3|liab-3|thft-3|othr-3|comb-3|swdr-3,,,,,1-Monthly_N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-decrease|wnlg-decrease|hail-decrease|hhhl-decrease|wtwt-decrease|nwwt-decrease|liab-decrease|thft-decrease|othr-decrease|comb-decrease|swdr-decrease,0,,,,,,Pay plan interaction with who pay and auto pay
+PAY_PLAN_EXP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Pay plan of the billing account
+PAY_PLAN_TERM,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Pay plan of the billing account
+PAYMENT_MTHD_CD_EXP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Pay method of the billing account, meaning automatic-pay/manual-pay type"
+PAYMENT_MTHD_CD_TERM,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Pay method of the billing account, meaning automatic-pay/manual-pay type"
+PAYPLAN_CHANGE_CNT,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Indicates whether only one pay plan was on the account (0) or more than one pay plan (1) in the 0 to 2 years prior to policy term start
+PAYPLAN_CHANGE_TENURE,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,"Whether only one pay plan was on the account (0) or more than one pay plan (1) in the 0 to 2 years prior to policy term start + ""_"" + Tenure group for billing"
+PAYPLAN_CHANGE_YR1,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Indicates whether only one pay plan was on the account (0) or more than one pay plan (1) in the 0 to 1 years prior to policy term start
+PAYPLAN_CHANGE_YR2,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Indicates whether only one pay plan was on the account (0) or more than one pay plan (1) in the 1 to 2 years prior to policy term start
+POLICY_CONTRACT_ID,string,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"Policy contract number, adjusted"
+POLICY_ID,string,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"FDR's PLCY_ID_SK, adjusted"
+POLICY_INCEPTION_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Policy inception date
+POLICY_TERM_END_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Derived policy term end date
+POLICY_TERM_START_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Derived policy term start date
+PNUM_IND,int32,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,Pnum Indicator
+POOL_IND,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Pool indicator
+PPC,string,discrete,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,PPC
+PPC_FIREDIST,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,,,,,,,,,,,,,0,,,,,,PPC interact with mileage to firestation
+PPC_GRP_NHP,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-2|wnlg-2|hail-999|hhhl-999|wtwt-2|nwwt-999|liab-2|thft-999|othr-999|comb-2|swdr-999,nwfr-2|wnlg-2|hail-999|hhhl-999|wtwt-2|nwwt-999|liab-2|thft-999|othr-999|comb-2|swdr-999,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-none|hhhl-none|wtwt-increase|nwwt-none|liab-increase|thft-increase|othr-increase|comb-increase|swdr-none,0,,,,,,Grouped variable derived using mapping logic available in SQL
+PPC_X_Y_W_GRP2,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,nwfr-3|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-3|swdr-999,,,,,,,,,,,,,,0,,,,,,PPC XYW group with 2014-2018 grouped
+PPCOMB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,COMB peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYCOMB
+PPERQK,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,ERQK peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYERQK
+PPFLTR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,FLTR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYFLTR
+PPHAIL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,HAIL peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYHAIL
+PPHHHL,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,High HAIL peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYHAIL
+PPHURR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,HURR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYHURR
+PPLIAB,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,LIAB peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYLIAB
+PPNWFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,NWFR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYNWFR
+PPNWWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,NWWT peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYNWWT
+PPOTHR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,OTHR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYOTHR
+PPSWDR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,SWDR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYSWDR
+PPTHFT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,THFT peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYTHFT
+PPWLFR,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,WLFR peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYWLFR
+PPWNLG,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,WNLG peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYWNLG
+PPWTWT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,WTWT peril TOT_INCRD_AMT for Non-CAT claims on the exposure record / ECYWTWT
+PREV_WRITTEN_PREM,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Previous eligible policy term's Month-1 written premium
+PRD_TYP_GRP,string,discrete,POLICY_RETENTION_13_1,Control,1,,,,,"nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-3|swdr-2,3,4,5","nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-3|swdr-2,3,4,5",,,,,,,,,,,0,,,,,,Product type group
+PRIOR_BI_CD_GRP,string,discrete,POLICY_RETENTION_13_1,Prior Carrier,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+PROPERTY_STATE,string,discrete,POLICY_RETENTION_13_1,Territory,1,,,,,,,,,,,,,,,,,0,,,,,,Property state code
+QUOTE_EFF_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Quote Effective Date
+QUOTE_INTL_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Quote Initialization Date
+RAND_INTEGER,int32,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,Random integer 1-100 for randomization download purposes.
+RATE_CHANGE,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Premium change percentage using current premium as the denominator; NULL when prior premium is missing or current premium is zero
+RATE_CHANGE2,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Premium change percentage using current premium as the denominator; -100 when prior premium is missing; otherwise NULL when current premium is zero
+RCV_CONTENTS_OFST,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Personal property actual cash value offset
+RCV_FENCES_CVG_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,RCV FENCES Coverage Indicator includes NG as group
+RCV_FENCES_CVG_IND,string,discrete,POLICY_RETENTION_13_1,Policy,1,,nwfr-1|wnlg-1|hail-1|hhhl-1|wtwt-1|nwwt-1|liab-1|thft-1|othr-1|comb-1|swdr-1,nwfr-1|wnlg-1|hail-1|hhhl-1|wtwt-1|nwwt-1|liab-1|thft-1|othr-1|comb-1|swdr-1,,,,,,nwfr-Y:1.01; N:1|wlfr-Y:1.01; N:1|wnlg-Y:1.01; N:1|hail-Y:1.01; N:1|hhhl-Y:1.01; N:1|liab-Y:1;N:1|thft-Y:1;N:1|nwwt-Y:1; N:1|wtwt-Y:1.01;N:1|othr-Y:1.01;N:1|swdr-Y:1;N:1,,Y;N,,,,,,0,,,,,,RCV FENCES Coverage Indicator
+REINST_UDR60_1YR_GRP,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,,,,,,,,,,0,,,,,,Reinstatements under 60 days on the account  in 1 to 2 years prior to policy term start
+REINST_UDR60_CNT,int8,discrete,POLICY_RETENTION_13_1,Billing & Payment,0,,,,,,,,0,,,,,,,,,0,,,,,,Reinstatements under 60 days on the account in 0 to 3 years prior to policy term start
+REINST_UDR60_IND,string,discrete,POLICY_RETENTION_13_1,Billing & Payment,1,,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-999|othr-5|comb-5|swdr-999,nwfr-5|wnlg-5|hail-5|hhhl-5|wtwt-5|nwwt-5|liab-5|thft-999|othr-5|comb-5|swdr-999,,,,,N,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-increase|wnlg-increase|hail-increase|hhhl-increase|wtwt-increase|nwwt-increase|liab-increase|thft-increase|othr-increase|comb-increase|swdr-increase,0,,,,,,Reinstatement under 60 REN
+ROOF_AGE_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped version of roof_age_n
+ROOF_TYP_CD,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Roof type code
+ROOF_TYP_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-2|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-2|liab-999|thft-999|othr-2|comb-2|swdr-999,nwfr-2|wnlg-3|hail-3|hhhl-3|wtwt-3|nwwt-2|liab-999|thft-999|othr-2|comb-2|swdr-999,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+ROOF_TYP_GRP_ROOF_AGE_NUM_BIN,string,discrete,POLICY_RETENTION_13_1,Interaction,1,,nwfr-999|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-999|wnlg-2|hail-2|hhhl-2|wtwt-2|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+ROOF_TYP_GRP_ROOF_AGE_NUM_BIN1,string,discrete,POLICY_RETENTION_13_1,Interaction,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+ROOF_TYP_GRP_ROOF_AGE_NUM_BIN2,string,discrete,POLICY_RETENTION_13_1,Interaction,0,,,,,,,,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+RPLC_COST_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,"Replacement cost group, derived from several fields like ERC and GRC"
+SCHED_ROOF_OFST2,string,discrete,POLICY_RETENTION_13_1,Offset,0,,,,,,,,,,,,,,,,,0,,,,,,Scheduled roof offset
+SEWER_DRAIN_CVG_AMT,float64,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,SEWER DRAIN Coverage Amount
+SEWER_DRAIN_CVG_DESC,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,SEWER DRAIN Coverage DESC
+SEWER_DRAIN_CVG_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,SEWER DRAIN Coverage Indicator
+SEWER_DRAIN_CVG_IND_V2,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,"nwwt-2,3,4,5","nwwt-2,3,4,5",,,,,,,,,,,0,,,,,,Derived SWDR Coverage Indicator
+POLICY_SOURCE_ID,string,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"FDR's SOI_ID, adjusted"
+SPELIMITS_CONTROL,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Derived Special Limit Coverage combined Standard and Premier
+HOUSEHOLD_ID,string,key,POLICY_RETENTION_13_1,Key,0,,,,,,,,,,,,,,,,,0,,,,,,"Household number sourced from FDR with some adjustments, adjusted"
+STATE_GRP_HAIL_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,hail-5|hhhl-5,hail-5|hhhl-5,,"hail-2,3,4|hhhl-2,3,4","hail-2,3,4|hhhl-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_LIAB_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,liab-5,liab-5,,"liab-2,3,4","liab-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_NWFR_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,nwfr-5,nwfr-5,,"nwfr-2,3,4","nwfr-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_NWWT_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,nwwt-5,nwwt-5,,"nwwt-2,3,4","nwwt-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_OTHR_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,othr-5,othr-5,,"othr-2,3,4","othr-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_SWDR_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,swdr-5,swdr-5,,"swdr-2,3,4","swdr-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_THFT_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,thft-5,thft-5,,"thft-2,3,4","thft-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_WNLG_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,wnlg-5,wnlg-5,,"wnlg-2,3,4","wnlg-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+STATE_GRP_WTWT_HOME,int8,discrete,POLICY_RETENTION_13_1,Territory,0,,wtwt-5,wtwt-5,,"wtwt-2,3,4","wtwt-2,3,4",,,,,,,,,,,0,,,,,,Peril-specific State Group
+SWDR_COV_AMT_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,swdr-2,swdr-2,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-none|wnlg-none|hail-none|hhhl-none|wtwt-none|nwwt-none|liab-none|thft-none|othr-none|comb-none|swdr-increase,0,,,,,,Grouped variable derived using mapping logic available in SQL
+SWDR_CVG_DESC_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,"swdr-2,3,4","swdr-2,3,4",,,,,,,,,,,0,,,,,,Grouped variable derived using mapping logic available in SQL
+SWR_DRN_ENDOR_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Sewer drain endorsement indicator
+TENURE_YEARS_GRP,string,discrete,POLICY_RETENTION_13_1,Policy,1,,,,,"nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-2,3,4,5|swdr-2,3,4,5","nwfr-2,3,4,5|wnlg-2,3,4,5|hail-2,3,4,5|hhhl-2,3,4,5|wtwt-2,3,4,5|nwwt-2,3,4,5|liab-2,3,4,5|thft-2,3,4,5|othr-2,3,4,5|comb-2,3,4,5|swdr-2,3,4,5",,,,,,,,,,,0,,,,,,Canonical categorical tenure group for population selection and modeling (0|1|2|3|4+)
+TERR_CBSATYPE_GRP2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,,,,,,,,,,,,,0,,,,,,CBSA
+TERR_G_ANNULRAIN2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,"wtwt-2,3","wtwt-2,3",,,,,,,,,,,0,,,,,,Annual Rain
+TERR_G_ANNULSNOW2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-4|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,nwfr-999|wnlg-4|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,,"wnlg-2,3|hail-2,3|hhhl-2,3|comb-2,3","wnlg-2,3|hail-2,3|hhhl-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Annual Snow
+TERR_G_HAIL_IDX2,string,discrete,POLICY_RETENTION_13_1,Territory,1,,wnlg-4|hail-4|hhhl-4|wtwt-4|liab-999|comb-4,wnlg-4|hail-4|hhhl-4|wtwt-4|liab-999|comb-4,,"wnlg-2,3|hail-2,3|hhhl-2,3|wtwt-2,3|comb-2,3","wnlg-2,3|hail-2,3|hhhl-2,3|wtwt-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Hail Index
+TERR_G_HLDI_COMP_RES_COMB,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-4|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,"nwfr-2,3","nwfr-2,3",,,,,,,,,,,0,,,,,,Hildi COMP residual
+TERR_G_HLDI_COMP_RES_EE10,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-999|swdr-999,,"wtwt-2,3","wtwt-2,3",,,,,,,,,,,0,,,,,,Hildi Comp residual earned exposure 10 buckets
+TERR_G_HLDI_COMP_RES_EE20,string,discrete,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,Hildi Comp residual earned exposure 20 buckets
+TERR_G_HLDI_COMP_RES_THFT,string,discrete,POLICY_RETENTION_13_1,Territory,1,,thft-4,thft-4,,"thft-2,3","thft-2,3",,,,,,,,,,,0,,,,,,Hildi Comp residual theft
+TERR_G_JAN_AVG_TEMP2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-4|othr-999|comb-4|swdr-4,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-4|othr-999|comb-4|swdr-4,,"nwfr-2,3|wnlg-2,3|wtwt-2,3|thft-2,3|comb-2,3|swdr-2,3","nwfr-2,3|wnlg-2,3|wtwt-2,3|thft-2,3|comb-2,3|swdr-2,3",,,,,,,,,,,0,,,,,,Average Jan Temp
+TERR_G_JUL_AVG_TEMP2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-4|hail-4|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,nwfr-999|wnlg-4|hail-4|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-999,,"wnlg-2,3|hail-2,3|wtwt-2,3|comb-2,3","wnlg-2,3|hail-2,3|wtwt-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Average Jul Temp
+TERR_G_MAXTEMP2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-4|comb-4|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-999|liab-999|thft-999|othr-4|comb-4|swdr-999,,"othr-2,3|comb-2,3","othr-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Max Temp
+TERR_G_MINTEMP2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-999,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-999|nwwt-4|liab-999|thft-999|othr-999|comb-4|swdr-999,,"nwwt-2,3|comb-2,3","nwwt-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Max Temp
+TERR_G_OIL_COAL_WOOD_PCT2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-999|othr-999|comb-4|swdr-999,nwfr-4|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-999|othr-999|comb-4|swdr-999,,"nwfr-2,3|hail-2,3|hhhl-2,3|liab-2,3|comb-2,3","nwfr-2,3|hail-2,3|hhhl-2,3|liab-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Fuel type
+TERR_G_POPDENS2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-999|thft-4|othr-4|comb-4|swdr-999,nwfr-4|wnlg-4|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-999|thft-4|othr-4|comb-4|swdr-999,,"nwfr-2,3|wnlg-2,3|wtwt-2,3|nwwt-2,3|thft-2,3|othr-2,3|comb-2,3","nwfr-2,3|wnlg-2,3|wtwt-2,3|nwwt-2,3|thft-2,3|othr-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Population Density
+TERR_G_PRECIP_IDX2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-4|othr-999|comb-4|swdr-999,nwfr-4|wnlg-4|hail-999|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-4|othr-999|comb-4|swdr-999,,"nwfr-2,3|wnlg-2,3|hhhl-2,3|thft-2,3|comb-2,3","nwfr-2,3|wnlg-2,3|hhhl-2,3|thft-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Precipitation
+TERR_G_RAINDAYS2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-999|othr-4|comb-4|swdr-4,nwfr-999|wnlg-999|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-4|thft-999|othr-4|comb-4|swdr-4,,"hail-2,3|hhhl-2,3|liab-2,3|othr-2,3|comb-2,3|swdr-2,3","hail-2,3|hhhl-2,3|liab-2,3|othr-2,3|comb-2,3|swdr-2,3",,,,,,,,,,,0,,,,,,Rain Days
+TERR_G_SNOWDAYS2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-4|thft-999|othr-999|comb-4|swdr-4,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-4|liab-4|thft-999|othr-999|comb-4|swdr-4,,"wtwt-2,3|nwwt-2,3|liab-2,3|comb-2,3|swdr-2,3","wtwt-2,3|nwwt-2,3|liab-2,3|comb-2,3|swdr-2,3",,,,,,,,,,,0,,,,,,Snow Days
+TERR_G_WIND_IDX2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-999|othr-4|comb-4|swdr-999,nwfr-4|wnlg-4|hail-4|hhhl-4|wtwt-999|nwwt-999|liab-999|thft-999|othr-4|comb-4|swdr-999,,"nwfr-2,3|wnlg-2,3|hail-2,3|hhhl-2,3|othr-2,3|comb-2,3","nwfr-2,3|wnlg-2,3|hail-2,3|hhhl-2,3|othr-2,3|comb-2,3",,,,,,,,,,,0,,,,,,Wind Index
+TERR_G_WTR_HRD_IDX2,int8,discrete,POLICY_RETENTION_13_1,Territory,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-4,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-4|nwwt-999|liab-999|thft-999|othr-999|comb-4|swdr-4,,"wtwt-2,3|comb-2,3|swdr-2,3","wtwt-2,3|comb-2,3|swdr-2,3",,,,,,,,,,,0,,,,,,Water hardness index
+TERR_ISO_FRQ_60K_CNDO,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,Condo ISO Frequency
+TERR_ISO_FRQ_60K_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Hail
+TERR_ISO_FRQ_60K_HAIL,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Hail
+TERR_ISO_FRQ_60K_LIAB_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,liab-4,liab-4,,"liab-2,3","liab-2,3",,,,poly,,liab-2,,,,,0,,,,,,ISO Frequency Liab
+TERR_ISO_FRQ_60K_LIAB,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,liab-4,liab-4,,"liab-2,3","liab-2,3",,,,poly,,liab-2,,,,,0,,,,,,ISO Frequency Liab
+TERR_ISO_FRQ_60K_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwfr-4,nwfr-4,,"nwfr-2,3","nwfr-2,3",,,,poly,,nwfr-3,,,,,0,,,,,,ISO Frequency Nwfr
+TERR_ISO_FRQ_60K_NWFR,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwfr-4,nwfr-4,,"nwfr-2,3","nwfr-2,3",,,,poly,,nwfr-3,,,,,0,,,,,,ISO Frequency Nwfr
+TERR_ISO_FRQ_60K_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwwt-4|swdr-999,nwwt-4|swdr-999,,"nwwt-2,3","nwwt-2,3",,,,,,,,,,,0,,,,,,ISO Frequency Nwwt
+TERR_ISO_FRQ_60K_NWWT,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwwt-4|swdr-999,nwwt-4|swdr-999,,"nwwt-2,3","nwwt-2,3",,,,,,,,,,,0,,,,,,ISO Frequency Nwwt
+TERR_ISO_FRQ_60K_OTHR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,othr-4,othr-4,,"othr-2,3","othr-2,3",,,,,,,,,,,0,,,,,,ISO Frequency Othr
+TERR_ISO_FRQ_60K_OTHR,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,othr-4,othr-4,,"othr-2,3","othr-2,3",,,,poly,,othr-2,,,,,0,,,,,,ISO Frequency Othr
+TERR_ISO_FRQ_60K_RNTR,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Rntr
+TERR_ISO_FRQ_60K_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,thft-4,thft-4,,"thft-2,3","thft-2,3",,,,,,,,,,,0,,,,,,ISO Frequency Thft
+TERR_ISO_FRQ_60K_THFT,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,thft-4,thft-4,,"thft-2,3","thft-2,3",,,,poly,,thft-2,,,,,0,,,,,,ISO Frequency Thft
+TERR_ISO_FRQ_60K_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,wnlg-999,wnlg-999,,,,,,,,,,,,,,0,,,,,,ISO Frequency Wnlg
+TERR_ISO_FRQ_60K_WNLG,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,wnlg-999,wnlg-999,,,,,,,,,,,,,,0,,,,,,ISO Frequency Wnlg
+TERR_ISO_FRQ_60K_WWTR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,wtwt-4,wtwt-4,,"wtwt-2,3","wtwt-2,3",,,,,,,,,,,0,,,,,,ISO Frequency Wwtr
+TERR_ISO_FRQ_60K_WWTR,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,wtwt-4,wtwt-4,,"wtwt-2,3","wtwt-2,3",,,,poly,,wtwt-2,,,,,0,,,,,,ISO Frequency Wwtr
+TERR_ISO_FRQ_XTX_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Hail
+TERR_ISO_FRQ_XTX_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Nwfr
+TERR_ISO_FRQ_XTX_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Nwwt
+TERR_ISO_FRQ_XTX_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Thft
+TERR_ISO_FRQ_XTX_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Frequency Wnlg
+TERR_ISO_PP_60K_CNDO,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Condo
+TERR_ISO_PP_60K_HAIL_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,hail-999|hhhl-4,hail-999|hhhl-4,,"hhhl-2,3","hhhl-2,3",,,,,,,,,,,0,,,,,,ISO Pure Premium Hail
+TERR_ISO_PP_60K_LIAB_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,liab-999,liab-999,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Liab
+TERR_ISO_PP_60K_NWFR_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,nwfr-999,nwfr-999,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Non-Wildfire
+TERR_ISO_PP_60K_NWWT_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,1,,nwwt-999|swdr-4,nwwt-999|swdr-4,,"swdr-2,3","swdr-2,3",,,,,,,,,,,0,,,,,,ISO Pure Premium Non-Weather Water
+TERR_ISO_PP_60K_NWWT,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,nwwt-999|swdr-4,nwwt-999|swdr-4,,"swdr-2,3","swdr-2,3",,,,poly,,swdr-2,,,,,0,,,,,,ISO Pure Premium Non-Weather Water
+TERR_ISO_PP_60K_OTHR_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,1,,othr-4,othr-4,,"othr-2,3","othr-2,3",,,,,,,,,,,0,,,,,,ISO Pure Premium Other
+TERR_ISO_PP_60K_OTHR,float64,continuous,POLICY_RETENTION_13_1,Territory,1,,othr-4,othr-4,,"othr-2,3","othr-2,3",,,,poly,,othr-2,,,,,0,,,,,,ISO Pure Premium Other
+TERR_ISO_PP_60K_RNTR,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Renter
+TERR_ISO_PP_60K_THFT_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,thft-999,thft-999,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Theft
+TERR_ISO_PP_60K_WNLG_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,wnlg-999,wnlg-999,,,,,,,,,,,,,,0,,,,,,ISO Pure Premum Wind Lightning
+TERR_ISO_PP_60K_WWTR_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Weather Water
+TERR_ISO_PP_XTX_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Hail Excluding Texas
+TERR_ISO_PP_XTX_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Non-Wildfire Excluding Texas
+TERR_ISO_PP_XTX_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Non-Weather Water Excluding Texas
+TERR_ISO_PP_XTX_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Theft Excluding Texas
+TERR_ISO_PP_XTX_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Pure Premium Wind Lightning Excluding Texas
+TERR_ISO_RES_60KXTX_HAIL,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Hail Excluding Texas 60K
+TERR_ISO_RES_60KXTX_NWFR,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Non-Wildfire Excluding Texas 60k
+TERR_ISO_RES_60KXTX_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Non-Weather Water Excluding Texas 60k
+TERR_ISO_RES_60KXTX_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Theft Lightning Excluding Texas 60K
+TERR_ISO_RES_60KXTX_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Wind Lightning Excluding Texas 60k
+TERR_ISO_RES_XTX_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Hail Excluding Texas
+TERR_ISO_RES_XTX_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Non-Wildfire Excluding Texas
+TERR_ISO_RES_XTX_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Non-Weather Water Excluding Texas
+TERR_ISO_RES_XTX_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Theft Lightning Excluding Texas
+TERR_ISO_RES_XTX_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Residual Wind Lightning Excluding Texas
+TERR_ISO_SEV_60K_CNDO,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Condo 60K
+TERR_ISO_SEV_60K_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Hail 60K
+TERR_ISO_SEV_60K_LIAB_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Liability 60K
+TERR_ISO_SEV_60K_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Non-Wildfire 60K
+TERR_ISO_SEV_60K_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Non-Weather Water 60K
+TERR_ISO_SEV_60K_OTHR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Other 60K
+TERR_ISO_SEV_60K_RNTR,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Renters 60K
+TERR_ISO_SEV_60K_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Theft 60K
+TERR_ISO_SEV_60K_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Wind Lightning 60K
+TERR_ISO_SEV_60K_WWTR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Weather Water60K
+TERR_ISO_SEV_XTX_HAIL_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Hail excluding Texas
+TERR_ISO_SEV_XTX_NWFR_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Non-Wildfire Excluding Texas
+TERR_ISO_SEV_XTX_NWWT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Non-Weather Water Excluding Texas
+TERR_ISO_SEV_XTX_THFT_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Theft Excluding Texas
+TERR_ISO_SEV_XTX_WNLG_BIN,float64,continuous,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,ISO Severity Wind Lightning Excluding Texas
+TERR_PB_HAIL_BIN,string,discrete,POLICY_RETENTION_13_1,Territory,1,,hail-4|hhhl-4,hail-4|hhhl-4,,"hail-2,3|hhhl-2,3","hail-2,3|hhhl-2,3",,,,,,,,,,,0,,,,,,Hail Size Bin
+THFT_PRTCTN_COMB_DESC,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Theft protection device desc
+THFT_PRTCTN_DEV,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Theft Protection Device Code
+TOT_INCRD_AMT_WCAT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,TOT_INCRD_AMT for both CAT and Non-CAT claims on the exposure record
+TOT_INCRD_AMT_XCAT,float64,measurement,POLICY_RETENTION_13_1,Measurement,0,,,,,,,,,,,,,,,,,0,,,,,,TOT_INCRD_AMT for Non-CAT claims on the exposure record
+TOT_NAF_CNT,int16,discrete,POLICY_RETENTION_13_1,Accident & Violation,0,,,,,,,,,,,,,,,,,0,,,,,,Not At Fault Count
+TRAMPOLINE_SOLAR_IND,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Trampoline and Solar indicator
+TRAMPOLINE_SOLAR_POOL_IND,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Trampoline Pool and Solar indicator
+TTL_BATH_QTY_GRP,string,discrete,POLICY_RETENTION_13_1,Home Attributes,1,,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-2|nwwt-2|liab-999|thft-999|othr-999|comb-999|swdr-2,nwfr-999|wnlg-999|hail-999|hhhl-999|wtwt-2|nwwt-2|liab-999|thft-999|othr-999|comb-999|swdr-2,,,,,,,solver,,,nwfr-0|wnlg-0|hail-0|hhhl-0|wtwt-0|nwwt-0|liab-0|thft-0|othr-0|comb-0|swdr-0,,,nwfr-none|wnlg-none|hail-none|hhhl-none|wtwt-increase|nwwt-increase|liab-none|thft-none|othr-none|comb-none|swdr-increase,0,,,,,,Grouped version of tot_bath_cnt
+WATER_PRTCTN_IND,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Derived water Protection Device Indicator
+WND_EXCLSN_ENDOR_IND,int8,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,wind exclusion indicator
+WRITTEN_PREM,float64,continuous,POLICY_RETENTION_13_1,Policy,1,,,,,,,,,,,,,,,,,0,,,,,,Written premium derived from the source row retained at Month 1
+WS_PRTCTN_DEV,string,discrete,POLICY_RETENTION_13_1,Home Attributes,0,,,,,,,,,,,,,,,,,0,,,,,,Water Protection Device Code
+ZIP_CD,int16,discrete,POLICY_RETENTION_13_1,Territory,0,,,,,,,,,,,,,,,,,0,,,,,,Zip code
+RETENTION_13_1_IND,int8,discrete,POLICY_RETENTION_13_1,Target,0,,,,,,,,,,,,,,,,,0,,,,,,1 retained at Month 13; 0 churned before Month 13 conditional on Month-1 survival
+MONTH_13_EVALUATION_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Month-13 outcome evaluation date
+MONTH_1_EVALUATION_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Month-1 eligibility and prediction cohort date
+NB_MAX_EXPSR_END_EFF_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Maximum new-business exposure end effective date
+NB_MIN_EXPSR_EFF_DT,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,Minimum new-business exposure effective date
+NB_POLICY_TERM_END_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,New-business policy-term end date
+NB_POLICY_TERM_START_DATE,datetime64[ns],date,POLICY_RETENTION_13_1,Date,0,,,,,,,,,,,,,,,,,0,,,,,,New-business policy-term start date
+POLICY_REWRITE_IND,string,discrete,POLICY_RETENTION_13_1,Policy,0,,,,,,,,,,,,,,,,,0,,,,,,Policy rewrite indicator
