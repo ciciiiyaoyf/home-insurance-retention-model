@@ -1,0 +1,49 @@
+# Local credentials and account configuration
+.env
+.env.*
+!.env.example
+connections.toml
+.secrets/
+secrets/
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+
+# Warehouse extracts, model artifacts, and orchestration state
+/output/
+/data/
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Python environments, caches, and packaging output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+build/
+dist/
+*.egg-info/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

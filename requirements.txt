@@ -1,0 +1,26 @@
+# Runtime dependencies for the reconstructed Python 3.10 retention pipeline.
+# Preserve the original model-library versions and NumPy 1.x / pandas 2.1 API.
+# The numerical stack also has Python 3.12 wheels for local verification.
+numpy==1.26.4
+pandas==2.1.4
+pyarrow>=14,<22
+scipy>=1.11.4,<1.16
+scikit-learn==1.6.1
+joblib>=1.3,<2
+xgboost==3.0.2
+optuna==4.5.0
+matplotlib>=3.8,<3.11
+plotly>=5.18,<7
+shap>=0.46,<0.50
+
+# Shared configuration utilities.
+PyYAML>=6,<7
+Jinja2>=3.1,<4
+
+# Snowflake remains the acquisition backend. Credentials are supplied at runtime.
+snowflake-connector-python[pandas]>=3.16,<4
+snowflake-sqlalchemy>=1.5.1,<2
+SQLAlchemy==1.4.51
+
+# Optional, unused by the retention pipeline: install pyreadstat for the legacy
+# SAS import helper, or snowflake-snowpark-python for explicit Snowpark sessions.

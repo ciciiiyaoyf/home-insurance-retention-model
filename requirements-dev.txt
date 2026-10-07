@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8,<9
+sqlglot==30.21.0
+duckdb==1.5.6
